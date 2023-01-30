@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-todo
+  namespace: django-todo-app
+spec:
+  containers:
+     - name: django-todo-app
+       image: rapolu13/django-todo-app-v1
+       ports:
+         - containerPort: 8000
